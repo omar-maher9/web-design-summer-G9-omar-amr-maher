@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  
+<body>
+  <fieldset>
+
+ <legend>empolyee details </legend>
+<form>
+<label for="">first name :</label>
+<input type="text" required name="username" pattern="[A-Za-z]+"
+title="Only letters A-Z or a-z are allowed"
+required> >
+<div>
+<label>last name :</label>
+<input type="text" required name="last name" name="last name" minlength="5" maxlength="10"> 
+</div>
+
+<div>
+    <label for="mobile">Mobile Number:</label>
+<input type="tel" id="mobile" min="11" name="mobile" 
+       pattern="^(010|011|012|015)[0-9]{8}$" 
+       placeholder="Enter mobile number" title="min number 11 start with 010,011,012,015"
+       required>
+    </div>
+    <div>
+    <label>upload image</label>
+    <input type="file" id="pngUpload" accept="image/png" title="only png">
+</div>
+<div>
+<label for="">comment</label>
+<textarea name="comment" rows="5" cols="50"></textarea>
+
+</div>
+    <div>
+<label for="browser">Choose a cource:</label>
+  <input list="browsers" id="browser" name="cource">
+
+  <datalist id="browsers">
+    <option value="ai">
+    <option value="front end">
+    <option value="back end">
+    
+  </datalist>
+
+</div>
+
+<div>
+    <label>date of birth :</label>
+    <input type="date" required name="date" >
+</div>
+<div>
+  <label >gender</label>
+  <input type="radio" name="gender" required> <label>male</label>
+    <input type="radio" name="gender"> <label>female</label>
+
+</div>
+
+
+<div>
+<label>track</label>
+<input type="checkbox"><label>html</label>
+<input type="checkbox"><label>css</label>
+<input type="checkbox"><label>javascript</label>
+
+</div>
+<div>
+    <input type="range" name="range" min="10" max="100" required>
+</div>
+
+<div>
+    <input type="submit">
+    <input type="reset">
+</div>
+
+</fieldset>
+</form>
+</body>
+</html>
