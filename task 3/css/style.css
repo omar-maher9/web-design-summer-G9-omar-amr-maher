@@ -1,0 +1,50 @@
+.bg-light {
+    padding-bottom: 2%;
+    padding-top: 2%  ;
+    box-sizing: border-box;
+
+}
+.text-center{
+    text-align: center;
+    padding-bottom: 3%;
+} 
+.card{
+    width: 25%;
+   box-shadow: 0px 0px 2px 2px  black;
+   display: inline-block;
+   padding: 2%;
+}
+.card2{
+     width: 25%;
+   box-shadow: 0px 0px 2px 2px  black;
+   display: inline-block;
+   padding: 2%;
+}
+.card3{
+     width: 25%;
+   box-shadow: 0px 0px 2px 2px  black;
+   display: inline-block;
+   padding: 2%;
+}
+.text{
+    padding: 4%;
+}
+.w-100{
+    width: 100%;
+}
+.container{
+    width: 80%;
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+.text-style{
+    color: gray;
+}
+.leftright{
+    margin-left: 2%;
+    margin-right:2%;
+}
