@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+.display-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  width: 30%;
+  position: relative;
+}
+.image {
+  position: relative;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+}
+
+.img-bg {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+  transition: 1s;
+  font-size: 15px;
+}
+.bg-lightgray {
+  background-color: rgb(73, 71, 71);
+}
+.text-gray {
+  color: rgb(150, 148, 148);
+}
+.text-white {
+  color: rgb(255, 255, 255);
+}
+.padding {
+  padding: 5%;
+}
+.card:hover .image {
+  transform: translate(-25px, -25px);
+}
+
+.card:hover .img-bg {
+  transform: translate(25px, 25px);
+}
+
+.margin {
+  margin: 4% 0;
+}
+#op1 {
+  background-color: #e4eaea;
+  padding: 4%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s ease;
+}
+.op1-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #055751;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  transition: 0.3s all;
+  z-index: 1;
+}
+.fa-arrow-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  z-index: 4;
+}
+
+#op1 h2,
+#op1 p {
+  position: relative; /* needed for z-index to apply */
+  z-index: 2; /* above the circle */
+  transition: 0.5s ease; /* smooth color change */
+}
+
+#op1:hover .op1-circle {
+  transform: scale(7);
+}
+
+#op1:hover h2 {
+  color: white;
+}
+#op1:hover p {
+  color: rgb(206, 204, 204);
+}
+
+#op4 {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  width: 400px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.fa-house {
+  font-size: 30px;
+}
+.w-80 {
+  width: 80%;
+}
+.font-weight {
+  font-weight: 100;
+}
+.pink-div {
+  background-color: #fd149c;
+  width: 200px;
+  color: white;
+  position: relative;
+  transform: skew(15deg) translateX(200px);
+  transition: 0.5s ease;
+}
+.arrow2 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: skew(-15deg);
+}
+#op4:hover {
+  border: 1px solid #fd149c;
+}
+#op4:hover .pink-div {
+  transform: skew(15deg) translateX(120px);
+}
